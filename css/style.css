@@ -13,7 +13,6 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   line-height: 20px;
-  color: #999999;
   font-size: 300;
   font-size: 16px;
 }
@@ -174,6 +173,15 @@ banner
 
 .block {
   display: block;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -385,92 +393,8 @@ about
   padding-bottom: 10px;
 }
 
-/***************************************
-doctor team
-***************************************/
-.thumbnail {
-  border-radius: 0px;
-}
-
-.caption h3 {
-  padding-bottom: 5px;
-}
-
-.caption p {
-  padding-bottom: 10px;
-}
-
-/***************************************
-testimonial
-***************************************/
-#testimonial {
-  background-color: #eee;
-}
-
-.testi-details {
-  background: #fff;
-  padding: 14px 24px;
-  margin-bottom: 20px;
-  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.18);
-  position: relative;
-}
-
-.testi-info a {
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  border-radius: 50%;
-  float: left;
-  margin-right: 10px;
-}
-
-.testi-info a img {
-  border-radius: 50%;
-}
-
-.testi-info h3 {
-  display: inline-block;
-  line-height: 22px;
-  font-weight: 600;
+.c-header {
   color: #000;
-  margin-top: 8px;
-}
-
-.testi-info h3 > span {
-  display: block;
-  line-height: 16px;
-  font-weight: 400;
-}
-
-.testi-details::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-color: transparent;
-  border-left: 0;
-  bottom: -40px;
-  left: 56px;
-  border-top-color: #fff;
-  border-width: 20px;
-}
-
-.testi-details::before {
-  content: "";
-  position: absolute;
-  transform: rotate(45deg);
-  width: 0px;
-  height: 0px;
-  bottom: -30px;
-  left: 45px;
-  border-style: solid;
-  border-width: 15px;
-  border-color: transparent;
-  z-index: -1;
-  box-shadow: 3px -13px 5px 0px rgba(0, 0, 0, 0.18);
-  border-left: 0;
 }
 
 /***************************************
@@ -504,6 +428,40 @@ cta -2
   margin-right: 7px;
 }
 
+.contact {
+  margin: 5rem 0;
+  background-color: #d6d9dd;
+}
+
+.form-label {
+  color: #000;
+  font-weight: 100;
+}
+
+.form-wrapper {
+  padding: 4rem 1.5rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.btn-send {
+  width: 50%;
+  margin: 0 auto;
+  transform: translateX(50%);
+}
+
+.btn-send:hover {
+  background-color: rgb(24, 64, 134);
+}
+
+.info-banner {
+  background-color: rgb(53, 82, 131);
+  padding: 3rem 0;
+}
+.info-banner h2, .info-banner h3 {
+  color: white;
+}
+
 #scene {
   position: relative;
 }
@@ -517,7 +475,7 @@ cta -2
   content: "";
   z-index: -1;
   opacity: 0.7;
-  background: black;
+  background-color: black;
 }
 
 .auto-text {
@@ -528,7 +486,7 @@ cta -2
 }
 @media (max-width: 551px) {
   .auto-text {
-    background-color: var(--bg);
+    background-color: rgba(0, 0, 0, 0.38);
     width: 100%;
     padding: 3.5rem 2.5rem;
     top: 10% !important;
@@ -591,7 +549,17 @@ cta -2
   content: "";
   z-index: -1;
   opacity: 0.7;
-  background: black;
+  background: rgb(53, 82, 131);
+}
+
+.mb-4 {
+  color: #ffffff;
+}
+
+@media (max-width: 551px) {
+  .ftco-animate {
+    padding-bottom: 25px;
+  }
 }
 
 .col-md {
@@ -676,7 +644,7 @@ footer
   position: relative;
   color: #fff;
   padding: 7rem 0;
-  margin-top: 40px;
+  margin-top: 15rem;
   background-color: #141d2a;
 }
 
