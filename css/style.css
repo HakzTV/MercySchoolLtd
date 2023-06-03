@@ -393,6 +393,14 @@ about
   padding-bottom: 10px;
 }
 
+.padder {
+  padding: 1rem 1.5rem;
+}
+
+.text-white {
+  color: white;
+}
+
 .c-header {
   color: #000;
 }
@@ -443,6 +451,11 @@ cta -2
   width: 50%;
   margin: 0 auto;
 }
+@media (max-width: 576px) {
+  .form-wrapper {
+    width: 100%;
+  }
+}
 
 .btn-send {
   width: 50%;
@@ -456,10 +469,23 @@ cta -2
 
 .info-banner {
   background-color: rgb(53, 82, 131);
-  padding: 3rem 0;
+  padding: 5rem 1.8rem;
 }
 .info-banner h2, .info-banner h3 {
   color: white;
+}
+
+.mx-1 {
+  margin: 0 1.5rem;
+}
+
+.meta-info > div {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+  padding: 1.4rem 0;
+}
+
+.meta-info > div > span {
+  font-size: 24 px;
 }
 
 #scene {
@@ -769,6 +795,8 @@ footer
 }
 @media (max-width: 551px) {
   .btn {
+    transform: translate(-1px, 10px);
+    margin: 0 auto;
     padding: 0.6rem 2rem;
   }
 }
@@ -780,6 +808,16 @@ footer
   .ml-auto, .mx-auto {
     display: flex;
     justify-content: center;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+@media (max-width: 450px) {
+  .form-outline {
+    width: 300px;
   }
 }
 

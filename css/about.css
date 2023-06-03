@@ -12,7 +12,9 @@
 }
 @media (max-width: 771px) {
   .text-banner {
-    padding-left: 3em;
+    left: -100px;
+    top: 200%;
+    width: 200px;
   }
 }
 .text-banner .desc {
